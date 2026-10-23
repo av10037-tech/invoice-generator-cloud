@@ -151,7 +151,6 @@ def generate_pdf_bytes(firm_name, inv_no, date, vehicle_no, eway_bill_no, place_
     story.append(address_table)
     story.append(Spacer(1, 10))
 
-    # Item Table Construction
     items_table_data = [
         [Paragraph("<b>S.N.</b>", table_header), Paragraph("<b>Description of Goods</b>", table_header), Paragraph("<b>HSN/SAC</b>", table_header), Paragraph("<b>Qty.</b>", table_header), Paragraph("<b>Unit</b>", table_header), Paragraph("<b>Price (₹)</b>", table_header), Paragraph("<b>Amount (₹)</b>", table_header)]
     ]
@@ -202,7 +201,6 @@ def generate_pdf_bytes(firm_name, inv_no, date, vehicle_no, eway_bill_no, place_
     story.append(items_table)
     story.append(Spacer(1, 10))
 
-    # Tax Summary Block
     if tax_type == "Intra-State (CGST + SGST)":
         half_rate = total_tax_rate / 2.0
         hsn_data = [
@@ -321,12 +319,13 @@ if nav == "📊 Invoice Workspace":
     st.markdown("---")
     st.subheader("📦 Line Items & Dynamic Setup")
 
-    if "items" not in st.session_state:
-        st.session_state.items = [
+    # Key renamed to line_items to prevent conflict with st.session_state.items method
+    if "line_items" not in st.session_state:
+        st.session_state["line_items"] = [
             {"desc": "MIX MASALA (H)", "hsn": "0910", "qty": 150.0, "unit": "Kgs", "price": 60.0}
         ]
 
-    for idx, item in enumerate(st.session_state.items):
+    for idx, item in enumerate(st.session_state["line_items"]):
         col_i1, col_i2, col_i3, col_i4, col_i5, col_i6 = st.columns([3, 1, 1, 1, 1, 0.5])
         with col_i1:
             item["desc"] = st.text_input(f"Item #{idx+1} Description", item["desc"], key=f"desc_{idx}")
@@ -342,12 +341,12 @@ if nav == "📊 Invoice Workspace":
         with col_i6:
             st.markdown("<br>", unsafe_allow_html=True)
             if st.button("❌", key=f"del_{idx}"):
-                if len(st.session_state.items) > 1:
-                    st.session_state.items.pop(idx)
+                if len(st.session_state["line_items"]) > 1:
+                    st.session_state["line_items"].pop(idx)
                     st.rerun()
 
     if st.button("➕ Add Another Item"):
-        st.session_state.items.append({"desc": "", "hsn": "0910", "qty": 1.0, "unit": "Kgs", "price": 0.0})
+        st.session_state["line_items"].append({"desc": "", "hsn": "0910", "qty": 1.0, "unit": "Kgs", "price": 0.0})
         st.rerun()
 
     st.markdown("---")
@@ -368,7 +367,7 @@ if nav == "📊 Invoice Workspace":
         else:
             total_tax_rate = st.number_input("Custom Tax Rate (%)", value=12.0)
 
-    subtotal = sum(i["qty"] * i["price"] for i in st.session_state.items)
+    subtotal = sum(i["qty"] * i["price"] for i in st.session_state["line_items"])
     tax_amount = subtotal * (total_tax_rate / 100.0)
     grand_total = subtotal + tax_amount
 
@@ -380,7 +379,7 @@ if nav == "📊 Invoice Workspace":
     if st.button("⚡ Generate Cloud PDF Invoice", type="primary"):
         pdf_bytes = generate_pdf_bytes(
             selected_firm, inv_no, inv_date, vehicle_no, eway_bill_no, place_of_supply,
-            firm_info, billed_text, shipped_text, st.session_state.items,
+            firm_info, billed_text, shipped_text, st.session_state["line_items"],
             tax_type, total_tax_rate, watermark_text
         )
         st.download_button(
