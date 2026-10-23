@@ -1,0 +1,111 @@
+{
+    "Shivam Store": {
+        "gstin": "09AIPPG0981P1ZI",
+        "pan": "AIPPG0981P",
+        "address": "Ward No. 16, Gali Ghanta Ghar, Balakram, Khatauli, Muzaffarnagar (U.P.) - 251201",
+        "phone": "7500055873",
+        "fssai": "12724065000128",
+        "bank_name": "Gulshan Mercantile Urban Co-operative Bank Ltd.",
+        "account_no": "507022000134",
+        "ifsc": "IBKL01529GM",
+        "jurisdiction": "Muzaffarnagar"
+    },
+    "Pal Enterprises": {
+        "gstin": "09ABCDE1234F1Z1",
+        "pan": "ABCDE1234F",
+        "address": "Plot No. 12, Industrial Area, Khatauli, Muzaffarnagar (U.P.)",
+        "phone": "9876543210",
+        "fssai": "",
+        "bank_name": "State Bank of India",
+        "account_no": "30987654321",
+        "ifsc": "SBIN0001234",
+        "jurisdiction": "Muzaffarnagar"
+    },
+    "Vishal Enterprises": {
+        "gstin": "09BCDEF2345G1Z2",
+        "pan": "BCDEF2345G",
+        "address": "Main Market, Khatauli, District Muzaffarnagar (U.P.)",
+        "phone": "",
+        "fssai": "",
+        "bank_name": "Punjab National Bank",
+        "account_no": "1234002100056789",
+        "ifsc": "PUNB0012300",
+        "jurisdiction": "Muzaffarnagar"
+    },
+    "Chouhan Traders": {
+        "gstin": "09CDEFG3456H1Z3",
+        "pan": "CDEFG3456H",
+        "address": "G.T. Road, Khatauli, Muzaffarnagar (U.P.)",
+        "phone": "",
+        "fssai": "",
+        "bank_name": "HDFC Bank",
+        "account_no": "50200012345678",
+        "ifsc": "HDFC0000123",
+        "jurisdiction": "Muzaffarnagar"
+    },
+    "Royal Sports": {
+        "gstin": "09DEFGH4567I1Z4",
+        "pan": "DEFGH4567I",
+        "address": "Sports Complex Road, Muzaffarnagar (U.P.)",
+        "phone": "",
+        "fssai": "",
+        "bank_name": "ICICI Bank",
+        "account_no": "001105001234",
+        "ifsc": "ICIC0000011",
+        "jurisdiction": "Muzaffarnagar"
+    },
+    "Bharat Enterprises": {
+        "gstin": "09EFGHI5678J1Z5",
+        "pan": "EFGHI5678J",
+        "address": "Station Road, Khatauli, Muzaffarnagar (U.P.)",
+        "phone": "",
+        "fssai": "",
+        "bank_name": "Axis Bank",
+        "account_no": "912020012345678",
+        "ifsc": "UTIB0000123",
+        "jurisdiction": "Muzaffarnagar"
+    },
+    "Rathi Timber Merchant": {
+        "gstin": "09FGHIJ6789K1Z6",
+        "pan": "FGHIJ6789K",
+        "address": "Timber Market, Khatauli, Muzaffarnagar (U.P.)",
+        "phone": "",
+        "fssai": "",
+        "bank_name": "Canara Bank",
+        "account_no": "110012345678",
+        "ifsc": "CNRB0001100",
+        "jurisdiction": "Muzaffarnagar"
+    },
+    "Rathi Wooden Packers": {
+        "gstin": "09GHIJK7890L1Z7",
+        "pan": "GHIJK7890L",
+        "address": "Packing Complex, Khatauli, Muzaffarnagar (U.P.)",
+        "phone": "",
+        "fssai": "",
+        "bank_name": "Union Bank of India",
+        "account_no": "05431100012345",
+        "ifsc": "UBIN0054321",
+        "jurisdiction": "Muzaffarnagar"
+    },
+    "Samridhi Agro": {
+        "gstin": "09HIJKL8901M1Z8",
+        "pan": "HIJKL8901M",
+        "address": "Mandi Samiti, Khatauli, Muzaffarnagar (U.P.)",
+        "phone": "",
+        "fssai": "",
+        "bank_name": "Bank of Baroda",
+        "account_no": "26010200001234",
+        "ifsc": "BARB0KHATAU",
+        "jurisdiction": "Muzaffarnagar"
+    },
+    "ABC Company": {
+        "gstin": "kjhjsdksjdwny87507",
+        "pan": "wu398udn",
+        "phone": "759583580",
+        "address": "JDjdh",
+        "bank_name": "hdshd",
+        "account_no": "585049",
+        "ifsc": "dhurur900",
+        "jurisdiction": "Muzaffarnagar"
+    }
+}

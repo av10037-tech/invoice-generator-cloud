@@ -1,0 +1,54 @@
+{
+    "Bharat Enterprises": {
+        "gstin": "09EFGHI5678J1Z5",
+        "inv_no": "017/2026-27",
+        "date": "20-08-2026",
+        "billed_to": "TEEBADHA TRADERS\n219, SORAV, LEHRA, Tiwaripur, Prayagraj\nGSTIN: 09AZEPT8930H1ZU",
+        "shipped_to": "Sh. MAHAVEER SINGHVI\nBHAGWANPUR, HARIDWAR, ROORKEE\nPIN - 247661",
+        "item_desc": "MIX MASALA (H)",
+        "hsn": "0910",
+        "qty": 150.0,
+        "price": 60.0,
+        "cgst": 2.5,
+        "sgst": 2.5
+    },
+    "Shivam Store": {
+        "inv_no": "017/2026-27",
+        "date": "20-08-2026",
+        "watermark": "ORIGINAL COPY",
+        "billed_to": "TEEBADHA TRADERS\n219, SORAV, LEHRA, Tiwaripur, Prayagraj\nGSTIN: 09AZEPT8930H1ZU",
+        "shipped_to": "Sh. MAHAVEER SINGHVI\nBHAGWANPUR, HARIDWAR, ROORKEE\nPIN - 247661",
+        "item_desc": "MIX MASALA (H)",
+        "hsn": "0910",
+        "qty": 150.0,
+        "price": 60.0,
+        "cgst": 2.5,
+        "sgst": 2.5
+    },
+    "Samridhi Agro": {
+        "inv_no": "017/2026-27",
+        "date": "20-08-2026",
+        "watermark": "ORIGINAL COPY",
+        "billed_to": "TEEBADHA TRADERS\n219, SORAV, LEHRA, Tiwaripur, Prayagraj\nGSTIN: 09AZEPT8930H1ZU",
+        "shipped_to": "Sh. MAHAVEER SINGHVI\nBHAGWANPUR, HARIDWAR, ROORKEE\nPIN - 247661",
+        "item_desc": "MIX MASALA (H)",
+        "hsn": "0910",
+        "qty": 150.0,
+        "price": 60.0,
+        "cgst": 2.5,
+        "sgst": 2.5
+    },
+    "ABC Company": {
+        "inv_no": "017/2026-27",
+        "date": "20-08-2026",
+        "watermark": "ORIGINAL COPY",
+        "billed_to": "TEEBADHA TRADERS\n219, SORAV, LEHRA, Tiwaripur, Prayagraj\nGSTIN: 09AZEPT8930H1ZU",
+        "shipped_to": "Sh. MAHAVEER SINGHVI\nBHAGWANPUR, HARIDWAR, ROORKEE\nPIN - 247661",
+        "item_desc": "MIX MASALA (H)",
+        "hsn": "0910",
+        "qty": 150.0,
+        "price": 60.0,
+        "cgst": 2.5,
+        "sgst": 2.5
+    }
+}
